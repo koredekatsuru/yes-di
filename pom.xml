@@ -10,13 +10,14 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>NoDI</artifactId>
+	<artifactId>YesDI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>NoDI</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<junit.vertion>4.13</junit.vertion>
 	</properties>
 
 	<dependencies>
@@ -44,6 +45,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

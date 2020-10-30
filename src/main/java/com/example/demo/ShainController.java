@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ShainController {
 
-	private final ShainService shainService = null;
-	
+	private final ShainService shainService;
+
+	//ShainServiceのDI
+	public ShainController(ShainService shainService) {
+		this.shainService = shainService;
+	}
+
 	@ModelAttribute
 	public ShainForm setUpForm() {
 		return new ShainForm();
